@@ -1,0 +1,1 @@
+(()=>{"use strict";function o(n){return n<=1?n:o(n-1)+o(n-2)}onmessage=function(n){console.log("worker is starting working");var s=o(n.data);console.log("worker is done working"),postMessage(s)}})();
